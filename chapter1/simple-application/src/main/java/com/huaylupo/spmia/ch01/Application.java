@@ -23,12 +23,12 @@ public class Application {
 	public String helloGET( 
 			@PathVariable("firstName") String firstName,
 			@RequestParam("lastName") String lastName) {
-		return String.format("{\"message\":\"Hola desde Espana %s %s\"}",firstName, lastName);
+		return String.format("{\"message\":\"Hello %s %s\"}",firstName, lastName);
 	}
 	
 	@PostMapping
 	public String helloPOST( @RequestBody HelloRequest request) {
-		return String.format("{\"message\":\"Hola desde Espana %s %s\"}",request.getFirstName(), request.getLastName());
+		return String.format("{\"message\":\"Hello %s %s\"}",request.getFirstName(), request.getLastName());
 	}
 }
 
