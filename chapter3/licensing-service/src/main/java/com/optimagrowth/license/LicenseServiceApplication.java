@@ -19,7 +19,7 @@ public class LicenseServiceApplication {
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver localeResolver = new SessionLocaleResolver();
-		localeResolver.setDefaultLocale(Locale.US);
+		localeResolver.setDefaultLocale(Locale.ES);
 		return localeResolver;
 	}
 	@Bean
